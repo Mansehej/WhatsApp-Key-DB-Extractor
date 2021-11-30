@@ -99,7 +99,7 @@ fi
 if [ -f tmp/whatsapp.ab ]; then
 echo -e "\nPlease enter your backup password (leave blank for none) and press Enter: "
 read password
-java -jar bin/abe.jar unpack tmp/whatsapp.ab tmp/whatsapp.tar $password
+java -jar bin/abp.jar unpack tmp/whatsapp.ab tmp/whatsapp.tar $password
 tar xvf tmp/whatsapp.tar -C tmp apps/com.whatsapp/f/key
 tar xvf tmp/whatsapp.tar -C tmp apps/com.whatsapp/db/msgstore.db
 tar xvf tmp/whatsapp.tar -C tmp apps/com.whatsapp/db/wa.db
